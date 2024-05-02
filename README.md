@@ -20,8 +20,10 @@ One simple endpoint from AdminController is active with no security.
 
 ## Next steps:
 - Enable spring security
+  - Create configuration for spring security to validate tokens came from our Cognito instance/tenant 
+  - Add an endpoint to login / fetch a token for a Cognito user (or maybe just do with Postman or similar)
+  - Add a couple of Cognito users with a couple different permissions
   - Add basic mcguffin endpoints secured with @PreAuthorize
-- Add an endpoint to login / fetch a token for a Cognito user
 - Test coverage - AWS SDK / Cognito validation
 - Update mcguffin endpoints to use a service/repo and actually be able to work with data
 - Explore multi-tenancy in Cognito and how it could affect what data users have access to or how to customize responses based on tenant
